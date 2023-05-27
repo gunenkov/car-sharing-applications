@@ -19,6 +19,7 @@ scalar DateTime
 
 type Query {
   applications: [Application!]!
+  filterApplications(startId: Float, finishId: Float, date: DateTime, accepted: Boolean): [Application!]!
 }
 
 type Mutation {
