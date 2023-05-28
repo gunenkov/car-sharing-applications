@@ -50,6 +50,7 @@ export class ApplicationsService {
 
   async create(data: NewApplicationInput): Promise<Application> {
     let a = { ...data } as Application;
+    a.accepted = false;
     await this.applicationsRepository.save(a);
     return a;
   }
