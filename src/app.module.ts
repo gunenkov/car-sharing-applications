@@ -24,7 +24,7 @@ import { Application } from './applications/models/application.model';
         port: +configService.get<number>('PG_PORT'),
         username: configService.get('PG_USER'),
         password: configService.get('PG_PASSWORD'),
-        database: configService.get('PG_DB'),
+        database: configService.get('PG_DATABASE'),
         entities: [Application],
         synchronize: true,
       }),
